@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RACCOON-PI</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <link rel="shortcut icon" href="raccoon.png">
+</head>
+<body class="BASE">
+    <div>
+        <button onclick="window.location.href = 'index.html';">Inici</button><button onclick="window.location.href = 'procedimiento.html';">Procediment</button><button onclick="window.location.href = 'quiensoy.html';">Qui soc</button><button onclick="window.location.href = 'galeria.html';">Galeria</button>
+     </div>
+
+    <div class="modelo">
+        <style>
+            .modelo {
+                display: flex
+            }
+
+            model-viewer {
+                width: 1920px;
+                height: 500px;
+                margin:0, auto;
+                background-color:rgb(67, 73, 73);
+                }
+
+        </style>
+        <model-viewer src="pi3.glb"
+         camera-controls
+          auto-rotate
+          environment-image="spruit_sunrise_1k.hdr"
+           disable zoom></model-viewer>
+    </div>
+
+    </div>
+    <div class="texto">
+        <h1 class="racoon">RACCOON-PI</h1>
+        <h3>El meu proyecte consisteix en el muntatge i preparació de un sistema que ens permet transformar-ho en una videoconsola que fa us de eumladors per reproduir <i>roms</i> i tenir la oportunitat de jugar jocs retros</h3>
+    
+        <p>Farem ús de una <i>Raspberry PI</i> en aquest cas el model 2B que té una cpu amb 900Mhz de velocitat, 1GB de RAM i una targeta SD amb un tamany mínim de 8GB. Li instal·larem <i>RetroPie</i> que es un sistema operatiu fet per la RaspBerry basat en Raspian, una distribució de Linux.</p>
+        <p>Amb el muntatge, instal·lació, configuració i revisió vaig afegint caracteristiques que al meu criteri son importants.<br> I aquestes caracteristiques son:
+        <p>Un script per visualitzar certa informació com la temperatura, memoria disponible, ram, un mode per a nens petits i una optimizació visual i als emuladors per aprofitar la Raspberry.</p>
+    </div>
+   <footer class="footer">
+    <div>
+        <ul>
+            <td><img class="mail" src="mail.png"</td><td>Jramirez@elpuig.xeill.net</td>
+        </ul>
+    </div>
+   </footer>
+    </body>
+</html>

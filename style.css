@@ -1,0 +1,288 @@
+.BASE{
+    background-color: rgb(0, 0, 0);
+}
+.footer{
+    background-color: rgb(67, 73, 73);
+    color: white;
+    padding: 0.1% 1% 0.2% 1%;
+    margin: 1px -1px 1px -1px;
+}
+
+.texto{
+    background-color: rgb(255, 244, 233);
+    padding:0.1% 1% 1% 1%;
+}
+button{
+    position:relative;
+    margin:auto;
+    background-color: rgb(50,50,50);
+    border: rgb(50,50,50) medium solid;
+    color:rgb(255, 255, 255);
+    width: auto;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0.1cm 0.1cm 0.1cm 0.1cm; 
+    border-radius: 5px;
+    padding: 10px;
+    width: 3cm;
+    left: 38%;
+    right: 35%;
+}
+button:hover{
+    position:relative;
+    margin:auto;
+    background-color: rgb(107, 107, 107);
+    border: rgb(107, 107, 107) medium solid;
+    color:rgb(255, 255, 255);
+    width: auto;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0.1cm 0.1cm 0.1cm 0.1cm; 
+    border-radius: 5px;
+    padding: 10px;
+    width: 3cm;
+    left: 38%;
+    right: 35%;
+}
+.racoon{
+    font-size: 72px;
+}
+hr {
+border: 0 none;
+height: 3px;
+color:black;
+background-color: black;
+margin: 20px 0px -30px 0px;
+}
+
+.indice{
+    letter-spacing: 0.2em;
+}
+.textoindice{
+    background-color: rgb(67, 73, 73);
+    color: white;
+    padding: 1% 1% 1% 1%;
+    margin: -2px -1% 1% -1%;
+}
+.opinion{
+    padding: 1% 1% 1% 1%;
+}
+.botopinion{
+    position:relative;
+    margin:auto;
+    background-color: rgb(109, 109, 109);
+    border: transparent;
+    color:rgb(255, 255, 255);
+    width: auto;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0.1cm 0.1cm 0.1cm 0.1cm; 
+    border-radius: 100px;
+    padding: 5px;
+    width: 3cm;
+}
+.botopinion:hover{
+    position:relative;
+    margin:auto;
+    background-color: rgb(141, 140, 140);
+    border: transparent;
+    color:rgb(255, 255, 255);
+    width: auto;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0.1cm 0.1cm 0.1cm 0.1cm; 
+    border-radius: 100px;
+    padding: 5px;
+    width: 3cm;
+}
+ol.center li{
+    text-align: left;
+    margin-left: 45%;
+}
+li.negro{
+    font-weight: bold;
+}
+.foto{
+background-color: rgb(67, 73, 73);
+color: white;
+padding: 1% 1% 1% 1%;
+margin: 0px 1px 1px 1px;
+
+}
+.Carnet{
+    position:relative;
+    padding: 1px 1px 1px 42%;
+    height: 400px;
+    width: 400;
+}
+p.nombre{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.textosoy{
+background-color: rgb(255, 244, 233);
+padding:1% 1% 1% 1%;
+text-align: center;
+font-size: 17px;
+}
+.mail{
+    height: 35px;
+    width: 35px;
+    margin: 1px 10px -12px 1px;
+}
+.imagenes{
+    float: right;
+    position: relative;
+}
+.dentro{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.alimentacion{
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+.HDMI{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.mando {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+.frontal{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.SD{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.FAN{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.arriba_dentro{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.abierta{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}.arriba2{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.arriba{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.HDMI_2{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.instalacion{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.INICIO{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.RETROPIE_MENU{
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+.UI_MENU{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.INPUT{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.ROMS1{
+    position: relative;
+    width: 600px;
+    height: 480px;
+}
+.ROMS2{
+    position: relative;
+    width: 500px;
+    height: 75px;
+}
+.RETROPIE_SETUP{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.EMU1{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.EMU2{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.SCRAP{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.UI_BASE{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.SCRIPT_ACCION2{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.DESCRIPCION{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.JUEGO{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.GALERIA1{
+    position: relative;
+    width: 600px;
+    height: 400px; 
+}
+p.kira{
+    text-align: center;
+    font-size: 21px;
+}
+.video{
+    width: 800px;
+    height: 500px;
+}
+.gantt{
+    width: 25px;
+    height: 25px;
+}

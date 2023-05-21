@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procediment</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="shortcut icon" href="raccoon.png">
+</head>
+<body class="BASE">
+    <div>
+        <button onclick="window.location.href = 'index.html';">Inici</button><button onclick="window.location.href = 'procedimiento.html';">Procediment</button><button onclick="window.location.href = 'quiensoy.html';">Qui soc</button><button onclick="window.location.href = 'galeria.html';">Galeria</button>
+     </div>
+
+    <div class="texto">
+        <div class="textoindice">
+            <h1 class="indice" style="text-align: center;">INDEX</h1>
+            <ol class="center">
+                <li class="negro"><botton>Components</botton></li>
+                <ul>
+                    <li>RaspBerry Pi 2b</li>
+                    <li>Cable HDMI</li>
+                    <li>Alimentació 5V 3A</li>
+                    <li>Teclat</li>
+                    <li>Joystick (opcional)</li>
+                    <li>Carcasa compatible</li>
+                    <li>Targeta SD</li>
+                    <li>Disipació</li>
+                    <li>Ventilador</li>
+                </ul>
+                <li class="negro">Muntatge</li>
+                <ol>
+                    <li>Muntar Hardware</li>
+                    <li>Instalar RetroPie</li>
+                </ol>
+                <li class="negro">Configuració</li>
+                <ol>    
+                    <li>Configurar RetroPie</li>
+                    <li>Instal·lar <em>ROMS</em></li>
+                    <li>Instal·lar Emuladors</li>
+                    <li><em>SCRAP</em></li>
+                    <li>Opcions afegides</li>
+                </ol>
+                <li class="negro">Conclusió</li>
+                <ol>
+                    <li>Conclusió</li>
+                    <li>Diagrama Gantt</li>
+                    <li>Preu</li>
+                    <li>Biografia</li>
+                    <li>Annexos</li>
+                </ol>
+            </ol>
+        </div>
+    </div>
+    <div class="texto">
+
+
+
+    <h2>1. Components</h2>
+    Per començar aquest projecte necessitarem certs components necessaris encara que també tenim alguns components que són opcionals.
+    <br>
+    <h4>Raspberry PI</h4>
+    Realment per a aquest projecte podem fer servir la raspberry que vegem convenient tenim diversos tipus de models com Pi zero, 2, 3, i 4, sent aquest últim el més potent. <br>
+    En el nostre cas farem servir <b><i>Raspberry Pi 2B</i></b>
+    <p></p>
+   <table>
+    <td><img src="img/DENTRO.jpeg" alt="PI de cerca" class="dentro"></td>
+   </table>
+    <p></p>
+    <h4>Cable HDMI</h4>
+    Aquest components no té gaire misteri, qualsevol cable que funcioni mitjanament bé perquè d'imatge i so és més que suficient.
+    <p></p>
+    <table>
+        <td><img src="img/CABLE_HDMI.jpeg" alt="cable hdmi" class="HDMI"></td>
+    </table>
+    <p></p>
+    
+    <h4>Alimentació 5V 3A</h4>
+    Aquest sí que és important, raspberry ven les seves pròpies fonts d'alimentació, però en aquest cas vaig obtenir per aconseguir un carregador típic d'un smartphone amb el voltatge i l'amperatge correctes (5V 3A) en el meu cas, en ser una <i>Raspberry PI 2b</i> va funcionar perfectament, però pot ser que altres models amb un major consum pateixin d'Under-voltage.(Simbol d'un llamp a la cantonada superior dreta).
+    <p></p>
+    <table>
+        <td><img src="img/ALIMENTACION.jpeg" alt="alimentación 5v 3A" class="alimentacion"></td>
+    </table>
+    <p></p>
+    Cal afegir també que en connectar-lo a una reglueta és més comú patir d'Under-voltage però si és directament a la presa de corrent és molt poc probable o gairebé impossible. <br>
+    En conclusió, és preferible aconseguir una font fiable com una oficial de <b>RaspBerry.</b>
+    <h4>Teclat</h4>
+    Pot ser qualsevol teclat genèric ja sigui membrana, mecànic, petit, gran, lúnic important és que sigui amb connexió USB.
+
+    <h4>Joystick</h4>
+    Aquest component pot ser opcional, encara que és molt recomanat, principalment perquè RetroPie té millor compatibilitat amb els Joysticks a l'hora de navegar pel menú. De nou, pot ser un joystick genèric. <br> L'únic que necessita és connectar-se per USB o tenir un <i>dongle</i> per connectar-se per USB. Això és perquè el model PI2 no té connexió bluetooth.
+    <p></p>
+    <table>
+        <td><img src="img/MANDO.jpeg" alt="Mando" class="mando"></td>
+    </table>
+
+    <h4>Carcasa</h4>
+    Aquest component, a banda de ser un principal, és on més podem ser creatius, hi ha diverses botigues que tenen a la venda carcasses per a RaspBerry.
+    <p></p>
+    <table>
+        <td><img src="img/FRONTAL.jpeg" alt="prontal de la carcasa" class="frontal"></td>
+    </table>
+    <p></p>
+    Un exemple d'aquestes botigues poden ser <b>Aliexpress, Amazon, Wallapop</b>. És important verificar la compatibilitat amb el nostre model, en el meu cas vaig optar per una compatible amb el meu model PI2 en forma de VideoConsola NES.
+    <h4>Targeta SD</h4>
+    Un altre component que és primordial sobretot per la seva capacitat, mínim és recomanable una mida de 8GB és capacitat suficient per tenir el S.O sense problema i diverses <i>ROMS</i>. <br> Encara que és preferible obtenir-ne una de 16GB o 32GB per tenir més capacitat i poder albergar més quantitat de <i>ROMS</i>.
+    <p></p>
+    <table>
+        <td><img src="img/SD.jpeg" alt="tarjeta SD" class="SD"></td>
+    </table>
+
+    <h4>Dissipació</h4>
+    La dissipació en qualsevol sistema informàtic és important, per això és recomanable instal·lar a la nostra PI un sistema de refrigeració correcte.
+    <p></p>
+    <table>
+        <td><img src="img/ARRIBA_DENTRO.jpeg" alt="desde arriba y mas centrica" class="arriba_dentro"</td>
+    </table>
+    En el meu cas com a dissipació he obtat per uns dissipadors d'alumini amb cinta tèrmica, per al model PI 2b necessitarem 2 dissipadors, un per al processador principal i l'altre per al processador secundari.
+    <h4>Ventilador</h4>
+    Si volem un extra de dissipació i activa, necessitarem un ventilador petit que el podem trobar a qualsevol botiga d'informàtica o en certes ocasions ve inclòs amb la carcassa.
+    <p></p>
+    <table>
+        <td><img src="img/FAN.jpeg" alt="ventilador" class="FAN"></td>
+    </table>
+
+    <h2>2. Muntatge</h2>
+    Per realitzar el muntatge necessitarem els components ja esmentats i connexió a internet ethernet.
+    <h4>2.1 Muntatge Hardware</h4>
+    1. Tenir els components a la vista i preparats per utilitzar-los. <br> 2. Hem d'obrir la carcassa per la meitat per obtenir la part superior i la part inferior <br> 3. Col·loquem la Raspberry en un lloc net amb una superfície relativament tova, suficient per exercir pressió <br>4. Col·loquem els dissipadors a cada processador <br> 5. Introduïm la RaspBerry al buit corresponent a la part inferior de la carcassa i la cargolem <br> 6. Col·loquem el ventilador al seu lloc corresponent amb una peça de goma eva si està disponible a la part superior del ventilador. <br>
+    7. Tanquem la carcassa aplicant-li pressió <br> 8 .Revisar que estigui ben tancada i comprovar que els connectors es vegin bé i siguin funcionals.
+    <p><b>Deixo imatges del procediment</b></p>
+    <table>
+        <img src="img/ABIERTA.jpeg" alt="abierta" class="abierta"><img src="img/ARRIBA2.jpeg" alt="desde arriba y abierta" class="arriba2"><img src="img/ARRIBA.jpeg" alt="desde arriba y abierta" class="arriba"><img src="img/HDMI.jpeg" alt="Visto desde el lado lateral" class="HDMI_2">
+    </table>
+    <h4>2.2 Instal·lar RetroPie</h4>
+    1. Descarregar imatge de RetroPie de la seva pàgina oficial <a target="_blank" href="https://retropie.org.uk/download/">RetroPie</a>
+    <br> 2. Introduir la targeta SD en un lector de targetes i formatar-la amb el format FAT si en té menys de 32GB o si en té més de 64GB format ExFAT<br>
+    3. Descarregar <a  target="_blank" href="https://sourceforge.net/projects/win32diskimager/">Win32DiskImager</a>. Seguir instruccions i seleccionar imatge de RetroPie (.IMG) 
+    <br> També es pot fer ús de <a target="_blank" href="https://rufus.ie/es/">RUFUS</a> que es un programari per a windows<br>  <p></p>
+    4. Connectar la targeta SD amb RetroPie a la Raspberry i connectar els perifèrics. <br>
+    5. Configurar els controls que utilitzarem, en el meu cas el joystick i un teclat per a la configuració <br>
+    <p><b>Deixo imatges del procediment</b></p>
+    <table>
+        <img src="img/INSTALACION.jpeg" alt="Instalar retro-pie" class="instalacion"><img src="img/UI_BASE.jpeg" alt="Skin base de retropie" class="UI_BASE">
+    </table>
+
+
+    <h2>3. Configuració</h2>
+    <h4>3.1 Configuració RetroPie</h4>
+    1. Principalment tenim que configurar els dispositius de entrada ja sigui un teclat o un joystick o tots dos. <br>Hi existeix mes configuració com entrar al mode terminal amb <b>Ctrl+F4</b> per cambiar per exemple la data.
+    <p></p>
+    <table>
+        <img src="img/INICIO.jpeg" alt="inicio_pi" class="INICIO"><img src="img/RETROPIE_MENU.jpeg" alt="menu_retropie" class="RETROPIE_MENU"><img src="img/SCRAPER.jpeg" alt="INPUT" class="INPUT">
+    </table>
+
+
+    <h4>3.2 Instal·lar <i>ROMS</i></h4>
+    Tenim diverses pagines per descarregar ROMS, una vegada que tenim les ROMS que vulguem hem d'introduir-les en el següent directori: <br>
+    home/retropie/roms/nom_emulador/  <br> <b>nom_emulador</b> hem de substituir-lo per el nom del emulador que nosaltres vulguem.
+    <p></p>
+    <table>
+        <img src="img/ROMS1.PNG" alt="MegaThread" class="ROMS1"><img src="img/ROMS2.PNG" alt="ROMS2" class="ROMS2">
+    </table>
+    
+    <h4>3.3 Instal·lar Emuladors</h4>
+    En aquest cas hem de tenir la RaspBerry amb connexió ethernet ja que per instal·lar emuladors es fa des del menú de Retropie. <br>
+    <em>RetroPie Menu > raspi-config > manage package > manage optional packages > veurem una llista d'emuladors i quan seleccionem el que vulguem li donem a "install from binary"</em>
+    <p></p>
+    <table>
+        <img src="img/RETROPIE_SETUP.jpeg" alt="Menu retropie" class="RETROPIE_SETUP"><img src="img/INSTALACION_EMULADORES.jpeg" alt="Instalacion de emuladores nuevos parte 1" class="EMU1" ><img src="img/INSTALACION_EMULADORES2.jpeg" alt="instalacion de emuladores nuevos parte 2" class="EMU2">
+    </table>
+
+    <h4>3.4 SCRAP</h4>
+    Aquesta opció ens permet afegir imatge, descripció i valoració als ROMS que li hem posat, l'única pega és que el nom de la ROM ha d'estar a Anglès.
+    <p></p>
+    <table>
+        <img src="img/SCRAPER.jpeg" alt="SCRAP" class="SCRAP">    
+    </table>
+
+    <h4>3.5 Opcions Afegides</h4>
+    Com ja he dit abans a la portada he afegit opcions o funcions noves a retropie que per a mi personalment creo que són molt útils. <br> Per exemple un script de bash on podem veure la temperatura, memòria de la targeta SD disponible, memòria RAM disponible i saber quina versió de RetroPie està instal·lada. <p></p>
+    Una mica del script que vaig fer.
+    <h3>Script</h3>
+    <b>Podeu veure el script sencer l' apartar de annexos.</b><br>
+        <pre>
+            case $principal in
+            1) while [ temp=0 ]
+                do
+                    clear;
+                echo "Menú temperatura";
+                echo "---------------------";
+                echo "Seleccione una opción";
+                echo "(1) Temperatura GPU";
+                echo "(2) Volver al menú principal"; 
+                echo "(0) Salir";
+                echo "---------------------";
+                read -p "Introduzca su eleccion:  " temp
+                case $temp in
+            
+        </pre>
+        <p><b>Imatges del script</b></p>
+        <table>
+        <img  src="img/SCRIPT_ACCION2.jpeg" alt="Script en accion 2" class="SCRIPT_ACCION2">
+        </table>
+    <p></p>
+    Amb l'apartat visual he posat un vídeo de The Legend Of Zelda quan s'engega la RaspBerry, a més he afegit una altra visualització dels emuladors i els ROMS. <br>
+    I una personalització a cada emulador i ROM per tenir el millor balanç entre potència i gràfics.
+    <p><b>Imatges amb el canvi visual</b></p>
+    <table>
+        <img src="img/UI_MENU.jpeg" alt="menu ui" class="UI_MENU"><img src="img/UI_BASE.jpeg" alt="Skin base de retropie" class="UI_BASE"><img src="img/INICIO.jpeg" alt="Art-book skin" class="INICIO"><img src="img/JUEGO.jpeg" alt="Juego nueva skin" class="JUEGO">
+    </table>
+
+    <p><b>Imatges de la descripció del videojoc.</b></p>
+    <table>
+        <img src="img/DESCRIPCION.jpeg" alt="Descripcion del juego" class="DESCRIPCION">
+    </table>
+    <p></p>
+    <p><b>Vídeo de TLOZ per al inici.</b></p>
+    <video src="img/TLOZ.mp4"class="video" controls></video>
+    <h2>4. Conclusió</h2>
+    Aquest apartar es tractará de la meva conclusió amb el projecte, les hores que li he ficat amb el diagrama de Gantt, el preu i per últim biografia i annexos.
+    <h4>4.1 Conclusió</h4>
+    Amb el projecte he après nous coneixements i reforçat els ja obtinguts, principalment perquè sabia de l'existència de les raspberrys però mai no vaig tenir l'oportunitat ni els coneixements per posar en pràctica un projecte amb elles. <br>
+    Si que tenia més coneixement sobre les ROMS i els emuladors, però gràcies a aquest projecte he après a instal·lar en una targeta SD el sistema operatiu RetroPie, configurar-lo, revisar-lo instal·lar nou contingut com les ROMS o els emuladors i una sèrie d'elements relacionats amb raspberry com les seves limitacions en maquinari o la gran varietat de projectes.
+    <p></p>
+    Agraeixo també als docents que m'han ensenyat eines necessàries per seguir amb el projecte com en la creació d'un Script amb menú i submenú, també els coneixements sobre Linux, programari lliure i ordres a Linux. <br>
+    I finalment el temps que he tingut per fer aquest projecte ha estat llarg, però a l'hora de compaginar-lo amb altres activitats ha estat més difícil del que pensava. Encara que m'he organitzat gairebé perfectament per acabar abans de la data límit.
+    <h4>4.2 Diagrama Gantt</h4>
+    por hacer
+    <a target="_blank" href="gantt/gantt.html">GANTT</a>
+
+    <h4>4.3 Preu</h4>
+    <a target="_blank" href="preu/preu.html">PREU</a>
+    
+    <h4>4.4 Biografia</h4>
+    <a  target="_blank" href="https://retropie.org.uk/">https://retropie.org.uk/</a>
+    <br>
+    <a  target="_blank" href=" https://retropie.org.uk/download/">https://retropie.org.uk/download/</a> 
+    <br>
+    <a target="_blank" href="https://elpuig.xeill.net/Members/jordifarrero/2014-15-seguretat-en-xarxes-sm2ab-diurn/uf1-scripts-demostracio">https://elpuig.xeill.net/Members/jordifarrero/2014-15-seguretat-en-xarxes-sm2ab-diurn/uf1-scripts-demostracio</a>
+    <br>
+    <a target="_blank" href="https://rufus.ie/es/">https://rufus.ie/es/"</a>
+    <br>
+    <a  target="_blank" href="https://sourceforge.net/projects/win32diskimager/">https://sourceforge.net/projects/win32diskimager/"</a>
+    <br>
+    <a target="_blank" href="https://www.youtube.com/watch?v=Fem0pWU9q-I">https://www.youtube.com/watch?v=Fem0pWU9q-I</a>
+    <br>
+    <a target="_blank" href="https://es.wikipedia.org/wiki/Raspberry_Pi">https://es.wikipedia.org/wiki/Raspberry_Pi</a>
+    <br>
+    <a target="_blank" href="https://retropie.org.uk/docs/Splashscreen/">https://retropie.org.uk/docs/Splashscreen/</a>
+    <br>
+    <a target="_blank" href="https://github.com/RetroPie/retropie-splashscreens">https://github.com/RetroPie/retropie-splashscreens</a>
+    <br>
+    <a target="_blank" href="https://learn.adafruit.com/running-opengl-based-games-and-emulators-on-adafruit-pitft-displays/retropie-setup">https://learn.adafruit.com/running-opengl-based-games-and-emulators-on-adafruit-pitft-displays/retropie-setup</a>
+    <br>
+    <a target="_blank" href="https://r-roms.github.io/">https://r-roms.github.io/</a>
+    <br>
+    <a target="_blank" href="https://romsespanol.com/">https://romsespanol.com/</a>
+    <br>
+    <a target="_blank" href="https://github.com/libretro/libretro-fceumm">https://github.com/libretro/libretro-fceumm</a>
+
+    <h4>4.5 Annexos</h4>
+        <div>
+            <b>Inicio SCRIPT</b>
+            <pre>
+#!/bin/sh
+clear;
+#Opciones
+principal=0;
+temp=0;
+ROJO="\e[31m"
+BLANCO="\e[97m"
+VERDE="\e[32m"
+AMARILLO="\e[33m"
+AZUL="\e[34m"
+NEGRO="\e[30m"
+CYAN="\e[36m"
+RESET="\033[0m"
+#Programa que empieza aqui
+
+while [ principal=0 ]
+do
+	clear;
+	echo -e "${NEGRO}${ROJO}"
+	echo -e "######    ####    ####    ####    #####    #####   ###   ##       ##### ##"
+	echo -e "##  ##   ##  ##  ##   #  ##   #  ##   ##  ##   ##  ## #  ##       ##  # ##"
+	echo -e "#####    ######  ##      ##      ##   ##  ##   ##  ##  # ##  ###  ##### ##"
+	echo -e "##  ##   ##  ##  ##   #  ##   #  ##   ##  ##   ##  ##  # ##       ##    ##"
+	echo -e "##   ##  ##  ##   ####    ####    #####    #####   ##   ###       ##    ##"
+	echo -e "${RESET}"
+	echo -e "${BLANCO}0=====|>>>>>>>>>>>>>>>${RESET}";
+	echo -e "${BLANCO}";
+	echo "--------------------------";
+	echo "(1) Temperatura";
+	echo "(2) Espacio en memoria";
+	echo "(3) Memoria RAM";
+	echo "(4) Informcion del Sistema";
+	echo "(0) Salir;";
+	echo "--------------------------";
+	read -p "Introduzca su opción:  " principal;
+	case $principal in
+		1) while [ temp=0 ]
+			do
+				clear;
+			echo "Menú temperatura";
+			echo "---------------------";
+			echo "Seleccione una opción";
+			echo "(1) Temperatura GPU";
+			echo "(2) Volver al menú principal"; 
+			echo "(0) Salir";
+			echo "---------------------";
+			read -p "Introduzca su eleccion:  " temp
+			case $temp in
+			1)
+			echo "La temperatura de la GPU es: ";
+			echo -e "${BLANCO}${AMARILLO}___________________${RESET}";
+			echo -e "${BLANCO}${VERDE}"
+			/opt/vc/bin/vcgencmd measure_temp;
+			echo -e "${RESET}"
+			echo -e "${BLANCO}${AMARILLO}___________________${RESET}";
+			echo -e "${BLANCO}"
+			read -p "Pulse ENTER para continuar" ENTER;
+			echo -e "${RESET}"
+			;;
+			2)
+			echo "Vuelta al menu principal";
+				break;
+			;;
+			0)
+			echo "ADIOH";
+				exit 0;
+			;;
+			esac
+		done
+	;;
+	2)
+	echo "Memoria Libre";
+	echo -e "${BLANCO}${CYAN}//////////////////${RESET}";
+	echo -e "${VERDE}";
+	df -h | grep /dev/root;
+	echo -e "${RESET}";
+	echo -e "${BLANCO}${CYAN}//////////////////${RESET}";
+	read -p "Pulse ENTER para continuar" ENTER;
+	;;
+	3)
+	echo "Memoria RAM disponible "
+	echo -e "${BLANCO}${ROJO}/////////////////${RESET}"
+	echo -e "${BLANCO}${AMARILLO}";
+	free -m;
+	echo -e "${RESET}";
+	echo -e "${BLANCO}${ROJO}/////////////////${RESET}"
+	read -p "Pulse ENTER para continuar" ENTER;
+	;;
+	4)
+	echo "Version del Sistema";
+	echo -e "${BLANCO}${AZUL}/////////////////${RESET}"
+	echo -e "${NEGRO}${ROJO}";
+	uname -a;
+	echo -e "${RESET}";
+	echo -e "${BLANCO}${AZUL}/////////////////${RESET}"
+	read -p "Pulse ENTER para continuar" ENTER;
+	;;
+	0)
+	echo "Hasta la proxima!";
+		exit 0;
+	;;
+	*)
+	echo "Esta bien si te equivocas, pero que no vuelva a ocurrir.";
+	esac
+done
+
+            </pre>
+            <b>Final del script</b>
+        </div>
+
+</div>   
+<div class="footer">
+    <div>
+        <ul>
+            <td><img class="mail" src="mail.png"</td><td>Jramirez@elpuig.xeill.net</td>
+        </ul>
+    </div>
+</div> 
+</body>
+</html>
